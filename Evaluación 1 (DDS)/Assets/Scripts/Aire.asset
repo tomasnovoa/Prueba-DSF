@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bb89d4e32d9dec43a21747cec32c136, type: 3}
+  m_Name: Aire
+  m_EditorClassIdentifier: 
+  name_: Aire
+  description: Es como Dios, no lo ves pero lo sientes
+  sprite: {fileID: 21300000, guid: 6f99da022b9739b4ab80a962f7071e65, type: 3}
