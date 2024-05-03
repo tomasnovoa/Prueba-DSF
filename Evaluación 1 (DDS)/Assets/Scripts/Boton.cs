@@ -6,18 +6,18 @@ using TMPro;
 public class Boton : MonoBehaviour
 {
     private SOItem currentItems;
-    private System.Action<SOItem> Onpress;
+    private System.Action<SOItem> Onintput;
     public TextMeshProUGUI numeros;
     
 
     public void interact()
     {
-        Onpress?.Invoke(currentItems);
+        Onintput?.Invoke(currentItems);
     }
 
-    public void Initialize(SOItem item, System.Action<SOItem> onpress)
+    public void Initialize(SOItem item, System.Action<SOItem> onintput)
     {
-        Onpress = onpress;
+        Onintput = onintput;
         currentItems = item;
 
         numeros.text = DataManager.data.GetItemCount(item.name).ToString();

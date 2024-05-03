@@ -34,23 +34,14 @@ public class PlayerController : MonoBehaviour
 
             DataItem dataItem = hit.gameObject.GetComponent<DataItem>();
 
-            // Verificar si se encontró el componente DataItem
-            if (dataItem != null)
+           if (dataItem != null)
             {
-                // Agregar el item al DataManager
+                
                 DataManager.data.AddItem(dataItem);
-
-                // Guardar los cambios en el DataManager
                 DataManager.Save();
-
-                // Destruir el objeto con el que colisionó
                 Destroy(hit.gameObject);
             }
-            else
-            {
-                // Si el objeto no tiene el componente DataItem, muestra un mensaje de error o realiza alguna otra acción
-                Debug.LogError("El objeto no tiene el componente DataItem adjunto.");
-            }
+          
 
         }
     }

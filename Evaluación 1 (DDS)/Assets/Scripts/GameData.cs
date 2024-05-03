@@ -12,7 +12,7 @@ public class GameData : MonoBehaviour
         items = new List<ItemData>();
     }
 
-    // Método AddItem modificado para aceptar un objeto DataItem
+  
     public void AddItem(ItemData newItem)
     {
         foreach (ItemData item in items)
@@ -23,7 +23,7 @@ public class GameData : MonoBehaviour
                 return;
             }
         }
-        // Si no se encuentra el ítem, agregarlo a la lista
+       
         items.Add(newItem);
     }
 

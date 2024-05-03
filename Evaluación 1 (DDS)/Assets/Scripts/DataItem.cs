@@ -13,18 +13,7 @@ public class DataItem : ItemData
 
     private void Start()
     {
-        if (soitem != null)
-        {
-            // Inicializar los campos de DataItem con la información de SOItem
-            Nombre = soitem.name;
-            Descripcion = soitem.Description;
-            Imagen = soitem.Icon;
-        }
-        else
-        {
-            // Si soitem es nulo, mostrar un mensaje de error
-            Debug.LogError("SOItem no está asignado en el objeto DataItem.");
-        }
+       
 
     }
     public DataItem(string identifier, int count) : base(identifier, count)
